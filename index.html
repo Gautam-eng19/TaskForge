@@ -170,19 +170,71 @@
 
             <article class="task-panel">
 
-              <header>
-                <h2>Today's Tasks</h2>
+              <header class="task-panel__header">
+
+                <div>
+                  <h2>Today's Tasks</h2>
+                  <p>4 tasks remaining</p>
+                </div>
+
+                <button class="add-task-btn">+ Add Task</button>
+                
               </header>
 
               <div class="task-list">
 
                 <article class="task-item">
 
-                  <h4>Complete DSA Assignment</h4>
-                  <p>High Priority</p>
+                  <input type="checkbox">
+
+                  <div class="task-content">
+
+                    <h4>Complete DSA Assignment</h4>
+                    <div class="task-meta">
+                      <span class="priority high">High</span>
+                      <span>Study</span>
+                      <span>7:00 PM</span>
+                    </div>                    
+                  </div>
+
+                  <button class="task-menu">⋮</button>
 
                 </article>
 
+                
+                <article class="task-item">
+
+                  <input type="checkbox">
+                    <div class="task-content">
+                      <h4>Build TaskForge DashBoard</h4>
+
+                      <div class="task-meta">
+                        <span class="priority medium">Medium</span>
+                        <span>Development</span>
+                        <span>9:00 PM</span>
+                      </div>
+                    </div>
+
+                    <button class="task-menu">⋮</button>
+
+                </article>
+
+                <article class="task-item">
+
+                  <input type="checkbox">
+                  <div class="task-content">
+                    <h4>Revise Linked Lists</h4>
+                    <div class="task-meta">
+                      <span class="priority low">Low</span>
+                      <span>DSA</span>
+                      <span>Tomorrow</span>
+                    </div>
+                  </div>
+
+                  <button class="task-menu">⋮</button>
+
+                </article>
+                
               </div>
 
             </article>
@@ -192,11 +244,73 @@
           <div class="center-column">
 
             <article class="analytics-card">
-              <header>
-                <h2>Productivity Overview</h2>
+
+              <header class="analytics-header">
+                <div>
+                  <h2>Productivity Overview</h2>
+                  <p>Your performance this week</p>
+                </div>
+
+                <select class="analytics-filter">
+                  <option>This Week</option>
+                  <option>Last Week</option>
+                  <option>This Month</option>
+                </select>
+
               </header>
+              
 
               <div class="chart-container">
+                <div class="chart-y-axis">
+                  <span>100</span>
+                  <span>75</span>
+                  <span>50</span>
+                  <span>25</span>
+                  <span>0</span>
+                </div>
+
+                <div class="chart-area">
+                  
+                  <div class="chart-grid">
+
+                    <div class="chart-bars">
+
+                      <div class="bar-group">
+                        <div class="bar" style="height:65%;"></div>
+                        <span>Mon</span>
+                      </div>
+
+                      <div class="bar-group">
+                        <div class="bar" style="height:82%;"></div>
+                        <span>Tue</span>
+                      </div>
+
+                      <div class="bar-group">
+                        <div class="bar" style="height:55%;"></div>
+                        <span>Web</span>
+                      </div>
+
+                      <div class="bar-group">
+                        <div class="bar" style="height:72%;"></div>
+                        <span>Fri</span>
+                      </div>
+
+                      <div class="bar-group">
+                        <div class="bar" style="height:45%;"></div>
+                        <span>Sat</span>
+                      </div>
+
+                      <div class="bar-group">
+                        <div class="bar" style="height:76%;"></div>
+                        <span>Sun</span>
+                      </div>
+
+
+                    </div>
+
+                  </div>
+
+                </div>
 
               </div>
 
@@ -207,11 +321,78 @@
           <div class="right-column">
 
             <article class="focus-card">
-              <h2>Focus Timer</h2>
+
+              <header class="focus-header">
+                <div>
+                  <h2>Focus Timer</h2>
+                  <p>Stay in the zone</p>
+                </div>
+                
+                <span class="focus-status">Focus</span>
+              </header>
+
+              <div class="timer-circle">
+                <div class="timer-content">
+                  <h2>25:00</h2>
+                  <p>Focus session</p>
+                </div>
+
+              </div>
+
+              <div class="timer-controls">
+                <button class="timer-start">Start Focus</button>
+                <button class="timer-reset">↻</button>
+
+              </div>
+
+              <div class="session-progress">
+                <span class="session-dot active"></span>
+                <span class="session-dot"></span>
+                <span class="session-dot"></span>
+                <span class="session-dot"></span>
+              </div>
+
             </article>
 
             <article class="deadline-card">
-              <h2>Upcoming Deadlines</h2>
+              <header class="deadline-header">
+
+                <div>
+                  <h2>Upcoming Deadlines</h2>
+                  <p>Don't miss a task</p>
+                </div>
+
+                <button>View All</button>
+              </header>
+
+              <div class="deadline-list">
+                <div class="deadline-item">
+                  <div class="deadline-date urgent">
+                    <span>15</span>
+                    <p>JUL</p>
+                  </div>
+
+                  <div class="deadline-content">
+                    <h4>DSA Assignment</h4>
+                    <p>Today . 7:00 PM</p>
+                  </div>
+
+                </div>
+
+                <div class="deadline-item">
+                  <div class="deadline-date">
+                    <span>16</span>
+                    <p>JUL</p>
+                  </div>
+
+                  <div class="deadline-content">
+                    <h4>TaskForge Dashboard</h4>
+                    <p>Tomorrow . 9:00 PM</p>
+                  </div>
+                  
+                </div>
+                
+              </div>
             </article>
 
           </div>
