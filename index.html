@@ -109,7 +109,6 @@
           </div>
 
           
-
         </section>
 
         <section id="statistics" class="statistics">
@@ -354,6 +353,12 @@
 
             </article>
 
+          </div>
+
+        </section>
+
+        <section class="deadline-section">
+          
             <article class="deadline-card">
               <header class="deadline-header">
 
@@ -391,11 +396,10 @@
                   </div>
                   
                 </div>
-                
-              </div>
-            </article>
 
-          </div>
+              </div>
+            
+          </article>
 
         </section>
 
@@ -403,66 +407,366 @@
 
           <div class="widgets-container">
 
-            <article class="widget-card">
+            <article class="widget-card task-distribution">
 
               <header class="widget-header">
-                <h2>Task Distribution</h2>
+                <div>
+                  <h2>Priority Distribution</h2>
+                  <p> Tasks by category</p>
+                </div>
               </header>
 
-              <div class="widget-content">
+              <div class="distribution-content">
 
+                <div class="donut-chart">
+                  <div class="donut-center">
+                    <h3>42</h3>
+                    <p>Total Tasks</p>
+                  </div>
+                </div>
+
+                <div class="distribution-legend">
+
+                  <div class="legend-item">
+                    <span class="legend-dot study"></span>
+
+                    <div>
+                      <p>Study</p>
+                      <h4>18 Tasks</h4>
+                    </div>
+                  </div>
+
+                  <div class="legend-item">
+                    <span class="legend-dot development"></span>
+
+                    <div>
+                      <p>Development</p>
+                      <h4>12 Tasks</h4>
+                    </div>
+                  </div>
+
+                  <div class="legend-item">
+                    <span class="legend-dot personal"></span>
+
+                    <div>
+                      <p>Personal</p>
+                      <h4>8 Tasks</h4>
+                    </div>
+                  </div>
+
+                  <div class="legend-item">
+                    <span class="legend-dot other"></span>
+
+                    <div>
+                      <p>Other</p>
+                      <h4>4 Tasks</h4>
+                    </div>
+                  </div>
+                  
+                </div>
 
               </div>
-              
+
             </article>
 
-            <article class="widget-card">
+            <article class="widget-card priority-distribution">
 
               <header class="widget-header">
-                <h2>Priority Distribution</h2>
+
+                <div>
+                    <h2>Priority Distribution</h2>
+                    <p>Tasks by importance</p>
+                </div>
+
               </header>
 
-              <div class="widget-content">
+              <div class="priority-chart">
 
+                <div class="priority-row">
+
+                  <div class="priority-info">
+                      <span>High Priority</span>
+                      <strong>12</strong>
+                  </div>
+
+                  <div class="priority-track">
+                      <div class="priority-fill high-fill"></div>
+                  </div>
+
+                </div>
+
+
+                <div class="priority-row">
+
+                  <div class="priority-info">
+                      <span>Medium Priority</span>
+                      <strong>20</strong>
+                  </div>
+
+                  <div class="priority-track">
+                      <div class="priority-fill medium-fill"></div>
+                  </div>
+
+                </div>
+
+
+                <div class="priority-row">
+
+                  <div class="priority-info">
+                      <span>Low Priority</span>
+                      <strong>10</strong>
+                  </div>
+
+                  <div class="priority-track">
+                      <div class="priority-fill low-fill"></div>
+                  </div>
+
+                </div>
 
               </div>
 
             </article>
 
-            <article class="widget-card">
+            <article class="widget-card music-widget">
 
               <header class="widget-header">
-                <h2>Activity Heatmap</h2>
+
+                <div>
+                    <h2>Now Playing</h2>
+                    <p>Focus music</p>
+                </div>
+
               </header>
 
-              <div class="widget-content">
+              <div class="music-body">
 
+                <div class="album-cover">
+
+                  <img src="assets/music.png" alt="Album Cover">
+
+                </div>
+
+                <div class="song-info">
+                  <h3>STARBOY</h3>
+                  <p>The Weeknd</p>
+                </div>
 
               </div>
 
-            </article>
+              <div class="progress-container">
 
-            <article class="widget-card">
+                <div class="progress-track">
 
-              <header class="widget-header">
-                <h2>Achievements</h2>
-              </header>
+                  <div class="progress-fill"></div>
 
-              <div class="widget-content">
+                </div>
 
+                <div class="music-time">
+                    <span>1:42</span>
+                    <span>4:56</span>
+                </div>
 
               </div>
 
+              <div class="music-controls">
+                <button>⏮</button>
+                <button class="play-btn">▶</button>
+                <button>⏭</button>
+              </div>
+
             </article>
+            
+            <div class="bottom-row">
+ 
+              <article class="widget-card activity-widget">
+                  
+                  <header class="widget-header">
+                    <div>
+                    <h2>Activity Heatmap</h2>
+                    <p>Your productivity over the last 12 weeks</p>
+                  </div>
+                </header>
+
+                <div class="heatmap-wrapper">
+                  <div class="heatmap-body">
+
+                    
+                    <div class="heatmap-days">
+                      <span>Mon</span>
+                      <span>Tue</span>
+                      <span>Wed</span>
+                      <span>Thu</span>
+                      <span>Fri</span>
+                      <span>Sat</span>
+                      <span>Sun</span>
+                    </div>
+                    
+                    <div class="heatmap-grid">
+                      
+                      <span class="heat level-1"></span>
+                      <span class="heat level-3"></span>
+                      <span class="heat"></span>
+                      <span class="heat level-2"></span>
+                      <span class="heat level-4"></span>
+                      <span class="heat level-1"></span>
+                      <span class="heat"></span>
+                      <span class="heat level-2"></span>
+                      
+                      <span class="heat level-2"></span>
+                      <span class="heat level-4"></span>
+                      <span class="heat level-3"></span>
+                      <span class="heat"></span>
+                      <span class="heat level-1"></span>
+                      <span class="heat level-4"></span>
+                      <span class="heat level-3"></span>
+                      <span class="heat level-2"></span>
+                      
+                      <span class="heat level-4"></span>
+                      <span class="heat level-2"></span>
+                      <span class="heat level-1"></span>
+                      <span class="heat level-3"></span>
+                      <span class="heat level-1"></span>
+                      <span class="heat level-4"></span>
+                      <span class="heat"></span>
+                      <span class="heat level-2"></span>
+                      
+                      <span class="heat"></span>
+                      <span class="heat level-1"></span>
+                      <span class="heat level-3"></span>
+                      <span class="heat level-2"></span>
+                      <span class="heat level-4"></span>
+                      <span class="heat level-3"></span>
+                      <span class="heat level-1"></span>
+                      <span class="heat level-4"></span>
+                      
+                      <span class="heat level-4"></span>
+                      <span class="heat level-3"></span>
+                      <span class="heat level-2"></span>
+                      <span class="heat level-1"></span>
+                      <span class="heat"></span>
+                      <span class="heat level-3"></span>
+                      <span class="heat level-4"></span>
+                      <span class="heat level-2"></span>
+                      
+                      <span class="heat level-2"></span>
+                      <span class="heat level-4"></span>
+                      <span class="heat level-3"></span>
+                      <span class="heat"></span>
+                      <span class="heat level-1"></span>
+                      <span class="heat level-4"></span>
+                      <span class="heat level-3"></span>
+                      <span class="heat level-2"></span>
+                      
+                      <span class="heat level-1"></span>
+                      <span class="heat level-3"></span>
+                      <span class="heat"></span>
+                      <span class="heat level-2"></span>
+                      <span class="heat level-4"></span>
+                      <span class="heat level-1"></span>
+                      <span class="heat"></span>
+                      <span class="heat level-2"></span>
+                    </div>
+                  </div>
+                    
+                  
+                  <div class="heatmap-legend">
+                    <span>Less</span>
+                    
+                    <span class="heat"></span>
+                    <span class="heat level-1"></span>
+                    <span class="heat level-2"></span>
+                    <span class="heat level-3"></span>
+                    <span class="heat level-4"></span>
+                    
+                    <span>More</span>
+                  </div>
+                </div>
+
+              </article>
+
+              <article class="widget-card achievements-widget">
+
+                <header class="widget-header">
+
+                  <div>
+                    <h2>Achievements</h2>
+                    <p>Your latest milestones</p>
+                  </div>
+
+                  <button class="view-achievements">View All</button>
+
+                </header>
+
+                  <div class="achievement-summary">
+
+                    <div class="achievement-row">
+                      <div class="achievement-left">
+                          <div class="achievement-icon">🔥</div>
+                          <div class="achievement-text">
+                              <h4>7 Day Streak</h4>
+                              <p>Consistency</p>
+                          </div>
+                      </div>
+                      <span class="achievement-badge">Unlocked</span>
+                  </div>
+
+                  <div class="achievement-row">
+                      <div class="achievement-left">
+                          <div class="achievement-icon">⚡</div>
+                          <div class="achievement-text">
+                              <h4>Focus Master</h4>
+                              <p>10 Sessions</p>
+                          </div>
+                      </div>
+                    <span class="achievement-badge">Unlocked</span>
+
+                  </div>
+
+                      <div class="achievement-progress">
+
+                        <div class="progress-header">
+                          <span>🏆 Productivity Legend</span>
+                          <strong>72%</strong>
+                        </div>
+
+                        <div class="achievement-track">
+                          <div class="achievement-fill"></div>
+                        </div>
+
+                      </div>
+
+                      <button class="more-achievements">
+                        +5 More Achievements →
+                      </button>
+
+                  </div>
+
+              </article>
+                         
+            </div>
 
           </div>
 
         </section>
 
-        <footer class="footer">
-          <p>
-            Consistency beats motivation. One task at a time.
+        <footer class="dashboard-footer">
+          <div class="footer-divider"></div>
+
+          <p class="footer-quote">
+            Consistency beats motivation.
+            <span>One task at a time.</span>
           </p>
+
+          <div class="footer-bottom">
+            <p>© 2026 TaskForge Dashboard</p>
+
+            <div class="footer-links">
+              <a href="#">Privacy</a>
+              <a href="#">Terms</a>
+              <a href="#">GitHub</a>
+            </div>
+
+          </div>
         </footer>
 
       </main>
