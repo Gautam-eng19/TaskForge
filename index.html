@@ -8,8 +8,15 @@
       <link rel="stylesheet" href="css/style.css">
     </head>
 
-    <body>
-
+    <body> 
+      <div class="background-engine">
+        <div class="nebula"></div>
+        <div class="aurora"></div>
+        <div class="grid"></div>
+        <div class="stars"></div>
+        <div class="noise"></div>
+      </div>
+      
       <aside class="sidebar">
         
         <div class="logo">
@@ -48,7 +55,17 @@
         <header class="top-navbar">
 
           <div class="search-section">
-            <input type="tect" placeholder="Search Tasks...">
+            <div class="search-box">
+              <svg class="search-icon" xmlns="http://www.w3.org/2000/svg"
+                    width="18" height="18" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                  <circle cx="11" cy="11" r="7"></circle>
+                  <path d="M20 20L17 17"></path>
+                </svg>
+                
+              <input type="tect" placeholder="Search Tasks...">
+              <span class="search-shortcut">⌘ K</span>
+            </div>
           </div>
 
           <div class="action-section">
@@ -67,7 +84,7 @@
 
         </header>
 
-        <section id="hero" class="hero">
+        <section id="hero" class="hero glass-card">
 
           <div class="hero-left">
 
@@ -115,7 +132,7 @@
 
           <div class="stats-container">
 
-            <article class="stat-card">
+            <article class="stat-card glass-card">
               <div class="card-header">
                 <h4>Completed</h4>
               </div>
@@ -126,7 +143,7 @@
               </div>
             </article>
 
-            <article class="stat-card">
+            <article class="stat-card glass-card">
               <div class="card-header">
                 <h4>Pending</h4>
               </div>
@@ -137,7 +154,7 @@
               </div>
             </article>
 
-            <article class="stat-card">
+            <article class="stat-card glass-card">
               <div class="card-header">
                 <h4>Current Streak</h4>
               </div>
@@ -148,7 +165,7 @@
               </div>
             </article>
 
-            <article class="stat-card">
+            <article class="stat-card glass-card">
               <div class="card-header">
                 <h4>Focus Time</h4>
               </div>
@@ -167,7 +184,7 @@
 
           <div class="left-column">
 
-            <article class="task-panel">
+            <article class="task-panel glass-card">
 
               <header class="task-panel__header">
 
@@ -242,7 +259,7 @@
 
           <div class="center-column">
 
-            <article class="analytics-card">
+            <article class="analytics-card glass-card">
 
               <header class="analytics-header">
                 <div>
@@ -319,7 +336,7 @@
 
           <div class="right-column">
 
-            <article class="focus-card">
+            <article class="focus-card glass-card">
 
               <header class="focus-header">
                 <div>
@@ -359,7 +376,7 @@
 
         <section class="deadline-section">
           
-            <article class="deadline-card">
+            <article class="deadline-card glass-card">
               <header class="deadline-header">
 
                 <div>
@@ -407,7 +424,7 @@
 
           <div class="widgets-container">
 
-            <article class="widget-card task-distribution">
+            <article class="widget-card task-distribution glass-card">
 
               <header class="widget-header">
                 <div>
@@ -469,7 +486,7 @@
 
             </article>
 
-            <article class="widget-card priority-distribution">
+            <article class="widget-card priority-distribution glass-card">
 
               <header class="widget-header">
 
@@ -527,7 +544,7 @@
 
             </article>
 
-            <article class="widget-card music-widget">
+            <article class="widget-card music-widget glass-card">
 
               <header class="widget-header">
 
@@ -578,7 +595,7 @@
             
             <div class="bottom-row">
  
-              <article class="widget-card activity-widget">
+              <article class="widget-card activity-widget glass-card">
                   
                   <header class="widget-header">
                     <div>
@@ -684,7 +701,7 @@
 
               </article>
 
-              <article class="widget-card achievements-widget">
+              <article class="widget-card achievements-widget glass-card">
 
                 <header class="widget-header">
 
@@ -761,9 +778,9 @@
             <p>© 2026 TaskForge Dashboard</p>
 
             <div class="footer-links">
-              <a href="#">Privacy</a>
-              <a href="#">Terms</a>
-              <a href="#">GitHub</a>
+              <a href="https://www.linkedin.com/in/gautam-jain-132812395/" target="_blank">LinkedIn</a>
+              <a href="https://github.com/Gautam-eng19" target="_blank">GitHub</a>
+              <a href="https://leetcode.com/u/gautamjain12/" target="_blank">Leetcode</a>
             </div>
 
           </div>
